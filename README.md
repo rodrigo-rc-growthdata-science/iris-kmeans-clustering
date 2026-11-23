@@ -1,14 +1,14 @@
-# 🌸 Iris Species Segmentation with K-Means Clustering
+#  Iris Species Segmentation with K-Means Clustering
 
 An **Unsupervised Machine Learning** project in Python using `scikit-learn`, `pandas`, and `seaborn` to uncover natural groupings within the classic *Iris* dataset based solely on physical measurements (sepal and petal dimensions), without exposing the species labels during training.
 
-## 🛠️ Tech Stack
+## Tech Stack
 * **Python 3**
 * **Pandas & NumPy** (data manipulation and numerical analysis)
 * **Scikit-Learn** (`StandardScaler`, `KMeans`, `silhouette_score`)
 * **Matplotlib & Seaborn** (data visualization)
 
-## 📊 Methodology & Results
+## Methodology & Results
 
 ### 1. Selecting the Optimal Number of Clusters (`k`)
 Features were first standardized using `StandardScaler` (mean = 0, standard deviation = 1) to ensure fair Euclidean distance calculations. Models ranging from `k = 2` to `k = 10` were then evaluated using both the **Elbow Method (Inertia)** and the **Silhouette Score**:
@@ -27,11 +27,11 @@ Cross-referencing the 4 predicted clusters against the ground-truth `species` la
 
 ![Species Distribution by Cluster](images/Species_distribution.png)
 
-## 💡 Key Takeaways
+## Key Takeaways
 * **Feature scaling is mandatory:** Without `StandardScaler`, features with larger numerical ranges would disproportionately skew K-Means distance calculations.
 * **Metrics + Domain Knowledge:** Mathematical metrics (inertia and silhouette) provide essential guidance for hyperparameter tuning, but combining them with domain context is critical to properly interpret the resulting segments.
 
-## 🚀 How to Run Locally
+## How to Run Locally
 1. Clone this repository:
    ```bash
    git clone https://github.com
@@ -44,4 +44,5 @@ Cross-referencing the 4 predicted clusters against the ground-truth `species` la
    ```bash
    python iris_kmeans.py
    ```
+
 
