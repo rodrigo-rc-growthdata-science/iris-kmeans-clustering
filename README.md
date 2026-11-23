@@ -42,5 +42,6 @@ Cross-referencing the 4 predicted clusters against the ground-truth `species` la
    ```
 3. Run the Python script:
    ```bash
-   python your_script.py
+   python iris_kmeans.py
    ```
+
